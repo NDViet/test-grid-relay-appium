@@ -1,0 +1,14 @@
+[node]
+session-timeout = 300
+override-max-sessions = true
+detect-drivers = false
+drain-after-session-count = 0
+
+[relay]
+url = "http://localhost:4723"
+status-endpoint = "/status"
+protocol-version = "HTTP/1.1"
+configs = [
+    '1', '{"browserName":"chrome", "platformName":"Android", "appium:platformVersion":"14"}',
+    '1', '{"browserName":"chrome", "platformName":"Android", "appium:platformVersion":"15"}'
+]
